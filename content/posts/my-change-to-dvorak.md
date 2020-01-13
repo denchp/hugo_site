@@ -73,15 +73,14 @@ I've also had other developers who have claimed to type 65-75 WPM (QWERTY) fail 
 I'll continue to work on my speed because it's become habit at this point.  I spend 15-45 minutes a day on keybr's practice drills, whether I'm watching Netflix at home, waiting for code to compile, or a query to run, I keep the window open so I can jump in and get a little more practice.
 
 Is Dvorak Better?
-
 : No.
-: Dvorak is definitely a different experience than QWERTY, but that's also probably because I'm learning differently.
+: Dvorak is definitely a different experience than QWERTY, but that's also probably because I'm learning differently.  It is ostensibly 'more efficient', but most of the stories about the origins of QWERTY (e.g., it was designed to slow typists down) are complete fabrications.  The origins of the layout are far more nuanced.  And while Dvorak was designed with efficiency in mind, the benefits are (in my opinion) immeasurably small.
 
 What about switching back and forth between Dvorak and QWERTY?
 : As far as the learning process has gone, I'm glad I took the plunge on the computers I use everyday.  I think if I had kept switching back and forth my learning would have been extremely stunted.
-: I do find it difficult to go to someone elses' computer to help them.  It's a very jarring experience.  It does feel a bit like the 'vegan trope' where any vegan will explain their veganism with barely any prompting.  But I do find I have to explain why I'm suddenly mystified by their unfamiliar keyboard layout.
+: I do find it difficult to go to someone elses' computer to help them.  It's a very jarring experience.  It does feel a bit like the 'vegan trope' where any vegan will explain their veganism with barely any prompting.  But, I do find I have to explain why I'm suddenly mystified by their unfamiliar keyboard layout.
 
 Should I Switch?
 : Sure!  Why not?
-:But, if you're expecting huge gains in typing speeds, don't.  As I said, I'm about 3-4 months into this change and am starting to push towards 60 WPM - which is about what I typed before the change.
+: But, if it's just because you're expecting huge gains in typing speeds - don't.  As I said, I'm about 3-4 months into this change and am starting to push towards 60 WPM - which is about what I typed before the change.
 : If you want to re-invent your typing habits - definitely.
