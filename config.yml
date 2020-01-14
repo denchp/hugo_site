@@ -1,0 +1,155 @@
+baseURL: https://example.com/
+theme: pure
+title: Coach Dench
+copyright: Patrick Dench
+defaultContentLanguage: en 
+footnoteReturnLinkContents: ↩
+hasCJKLanguage: true
+paginate: 7
+enableEmoji: true
+PygmentsCodeFences: false
+googleAnalytics: ""      # UA-XXXXXXXX-X 
+permalinks:
+  posts: /:year/:month/:filename/
+
+taxonomies:
+    category : categories
+    tag : tags
+    series : series
+outputFormats:          
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+    home: ["HTML","RSS","SearchIndex"]  # recommend not to modify
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      title: Home
+      url: /
+      weight: 1
+
+    - identifier: archives
+      name: Archives
+      title: Archives
+      url: /posts/
+      weight: 2
+
+    # - identifier: categories
+    #   name: Categories
+    #   title: Categories
+    #   url: /categories/
+    #   weight: 3
+
+    - identifier: tags
+      name: Tags
+      title: Tags
+      url: /tags/
+      weight: 4
+
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: 5
+
+
+params:
+  since: 2017
+  dateFormatToUse: "2006-01-02"
+  enablePostCopyright: true
+  mainSections: ["posts"]
+  enableMathJax: true
+  highlightjs:
+    langs: ["python", "javascript"]
+
+  # Allows you to specify an override stylesheet
+  # put custom.css in $hugo_root_dir/static/
+  # customCSS: css/custom.css
+
+  menuIcons:
+    enable: true 
+    home: icon-home-fill
+    archives: icon-archives-fill
+    categories: icon-folder
+    tags: icon-tags
+    repository: icon-project
+    books: icon-book-fill
+    links: icon-friendship
+    about: icon-cup-fill
+
+  # profile
+  profile:
+    enabled: true # Whether to show profile bar
+    avatar: puckLogo.png
+    author: Coach Dench
+    social:
+      links:
+        twitch: https://twitch.tv/CoachDench
+        twitter: https://twitter.com/CoachDench
+        rss: /index.xml
+      link_tooltip: false # enable the social link tooltip, options: true, false
+  # Site
+  site:
+    logo:
+      enabled: true
+      width: 40
+      height: 40
+      url: favicon.ico
+    title: Hugo # 页面title
+    favicon: favicon.ico
+    board: <p>enjoy~</p> # 公告牌
+
+  # Share
+  # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+  share:
+    enable: true 
+    sites: facebook,twitter 
+
+  # Comment
+  comment:
+    type:  # type disqus/gitalk/valine
+    gitalk: # gitalk. https://gitalk.github.io/
+      owner: #GitHub repository
+      admin: #GitHub repository
+      repo:  #GitHub repository.
+      ClientID: #GitHub Application Client ID.
+      ClientSecret: #GitHub Application Client Secret.
+
+  # wordcount
+  postCount:
+    enable: true
+    wordcount: true
+    min2read: true
+
+  # config
+  config:
+    skin: theme-black # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
+    layout: main-center # main-left main-center main-right
+    excerpt_link: Read More
+    toc: true
+
+  # Sidebar
+  sidebar: right
+
+  # Search
+  search:
+    enable: true # enable search. thanks for https://raw.githubusercontent.com/ppoffice/hexo-theme-icarus/master/source/js/insight.js
+
+  # Sidebar only the following widgets. you can remove any you don't like it.
+  widgets:
+    - board
+    - category
+    - tag
+    - recent_posts
+

@@ -2,6 +2,7 @@
 title: "My Change to Dvorak"
 date: 2020-01-08T14:03:24-06:00
 draft: true
+tags: [ 'dvorak', 'personal development' ]
 ---
 
 ## Practice Makes Permanent
@@ -84,3 +85,5 @@ Should I Switch?
 : Sure!  Why not?
 : But, if it's just because you're expecting huge gains in typing speeds - don't.  As I said, I'm about 3-4 months into this change and am starting to push towards 60 WPM - which is about what I typed before the change.
 : If you want to re-invent your typing habits - definitely.
+
+You can find my key.br profile [here](https://www.keybr.com/profile/l3gx1xr) (make sure to look at the Dvorak stats, not the QWERTY)
