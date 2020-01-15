@@ -61,3 +61,40 @@ So much better.
 I know your first response to the header on this section is to either **scroll past** or ask, "If async/await is better, why should I learn about Promises at all?"
 
 The short answer is: async/await is just syntactic sugar around Promises, understanding promises gives you more power over how you write your code, and *Promises still have some value*.
+
+Before we get any further, let's take a look at the Promise constructor:
+` new Promise( function(resolve, reject) {} ); `
+
+The Promise contstructor takes in a function that takes two parameters *resolve* and *reject*.  The function itself is the action that the Promise will take during it's execution.  This could be anything from making an API call, to doing some advanced math (though we've covered why there's no immediate benefit to running so-called *long running functions* using JS's async features).
+
+The *resolve* and *reject* parameters provide callback functions that the Promise can execute after it either succeeds (resolved) or fails (rejected).
+
+`myFunction() {
+	return Promise(function(resolve, reject) {
+		try {
+			// do a thing, possibly async, then…
+
+			if (/* everything turned out fine */) {
+				resolve("Stuff worked!");  }
+			else {
+				reject(Error("It broke"));
+			}
+		} catch (err) {
+			reject(err);
+		}
+	});`
+}`
+
+This example gives us a function that returns a *Promise*.  That Promise will (eventually) call either the *resolve* or *reject* functions.
+
+When calling the above function we could do something like this:
+
+`const promise = myFunction();
+
+promise.then(result => {
+    // Handle successful completion
+}).catch(err => {
+    // Handle failure
+}).finally(() => {
+    // The finally block is always executed after the promise is satisfied
+});`
