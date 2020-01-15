@@ -32,13 +32,13 @@ Promises formalized many of the practices being used in the wild, and were a ver
 
 `
 const promise1 = someAsyncCall().then(res => {
-    someOtherAsyncCall(res).then(otherRes => {
-	console.log('Success!!!');
-    }).catch(insideErr => {
-       console.log('${insideErr} occurred');
-    })
+	someOtherAsyncCall(res).then(otherRes => {
+		console.log('Success!!!');
+	}).catch(insideErr => {
+		console.log('${insideErr} occurred');
+	})
 }).catch(err => {
-    console.log('${err) occurred');
+	console.log('${err) occurred');
 });
 `
 
@@ -65,6 +65,7 @@ I know your first response to the header on this section is to either **scroll p
 The short answer is: async/await is just syntactic sugar around Promises, understanding promises gives you more power over how you write your code, and *Promises still have some value*.
 
 Before we get any further, let's take a look at the Promise constructor:
+
 ` new Promise( function(resolve, reject) {} ); `
 
 The Promise contstructor takes in a function that takes two parameters *resolve* and *reject*.  The function itself is the action that the Promise will take during it's execution.  This could be anything from making an API call, to doing some advanced math (though we've covered why there's no immediate benefit to running so-called *long running functions* using JS's async features).
