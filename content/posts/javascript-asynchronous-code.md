@@ -30,7 +30,7 @@ Asynchronous code isn't new to JavaScript, and while *Promises* and *async/await
 
 Promises formalized many of the practices being used in the wild, and were a very good solution to a common problem.  However they weren't without problems.  Most often extensive use of promises devolved into a grotesque chain and nesting of '.then' calls:
 
-`
+```
 const promise1 = someAsyncCall().then(res => {
 	someOtherAsyncCall(res).then(otherRes => {
 		console.log('Success!!!');
@@ -40,19 +40,21 @@ const promise1 = someAsyncCall().then(res => {
 }).catch(err => {
 	console.log('${err) occurred');
 });
-`
+```
 
 That's two async calls, one dependent on the result of the other, and handling the failure (a.k.a. rejection) of either Promise.
 
 In 2017 ES8* introduced async/await as a standard language feature, however - support started appearing in browsers in 2016.  The async/await keywords address some of the shortcomings of Promises.  Mostly the ugly world of nested promises and error handling.  Using async/await the code above can be refactored to this:
 
-`try {
+```
+try {
     const result = await someAsyncCall();
     const otherResult  = await someOtherAsyncCall(result);
     console.log('Success!!!');
 } catch (err) {
     console.log('${err) occurred');
-}`
+}
+```
 
 Not only is this significantly easier to read, but it uses common JS error handling (try/catch), and it's immediately clear what is going on: wait for the result of someAsyncCall(), use that to call someOtherAsyncCall, if either fail log the error to the console.
 
@@ -66,13 +68,13 @@ The short answer is: async/await is just syntactic sugar around Promises, unders
 
 Before we get any further, let's take a look at the Promise constructor:
 
-` new Promise( function(resolve, reject) {} ); `
+``` new Promise( function(resolve, reject) {} ); ```
 
 The Promise contstructor takes in a function that takes two parameters *resolve* and *reject*.  The function itself is the action that the Promise will take during it's execution.  This could be anything from making an API call, to doing some advanced math (though we've covered why there's no immediate benefit to running so-called *long running functions* using JS's async features).
 
 The *resolve* and *reject* parameters provide callback functions that the Promise can execute after it either succeeds (resolved) or fails (rejected).
 
-`
+```
 myFunction() {
 	return Promise(function(resolve, reject) {
 		try {
@@ -88,13 +90,13 @@ myFunction() {
 		}
 	});`
 }
-`
+```
 
 This example gives us a function that returns a *Promise*.  That Promise will (eventually) call either the *resolve* or *reject* functions.
 
 When calling the above function we could do something like this:
 
-`
+```
 const promise = myFunction();
 
 promise.then(result => {
@@ -104,7 +106,7 @@ promise.then(result => {
 }).finally(() => {
     // The finally block is always executed after the promise is satisfied
 });
-`
+```
 
 Here we are calling our function, and appending functions to the *.then*, *.catch*, and *.finally* 'events' of the Promise.  The Promise prototype appends the handlers to the resolve (*then*) and reject (*catch*) function calls within our function.  The *.finally* event is a special callback that is triggered after the Promise is *either* resolved or rejected - useful for cleaning up the state of the UI after the call is completed (e.g., hiding a spinner).
 
