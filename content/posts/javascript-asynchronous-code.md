@@ -30,7 +30,8 @@ Asynchronous code isn't new to JavaScript, and while *Promises* and *async/await
 
 Promises formalized many of the practices being used in the wild, and were a very good solution to a common problem.  However they weren't without problems.  Most often extensive use of promises devolved into a grotesque chain and nesting of '.then' calls:
 
-`const promise1 = someAsyncCall().then(res => {
+`
+const promise1 = someAsyncCall().then(res => {
     someOtherAsyncCall(res).then(otherRes => {
 	console.log('Success!!!');
     }).catch(insideErr => {
@@ -38,7 +39,8 @@ Promises formalized many of the practices being used in the wild, and were a ver
     })
 }).catch(err => {
     console.log('${err) occurred');
-});`
+});
+`
 
 That's two async calls, one dependent on the result of the other, and handling the failure (a.k.a. rejection) of either Promise.
 
@@ -69,7 +71,8 @@ The Promise contstructor takes in a function that takes two parameters *resolve*
 
 The *resolve* and *reject* parameters provide callback functions that the Promise can execute after it either succeeds (resolved) or fails (rejected).
 
-`myFunction() {
+`
+myFunction() {
 	return Promise(function(resolve, reject) {
 		try {
 			// do a thing, possibly async, then…
@@ -83,13 +86,15 @@ The *resolve* and *reject* parameters provide callback functions that the Promis
 			reject(err);
 		}
 	});`
-}`
+}
+`
 
 This example gives us a function that returns a *Promise*.  That Promise will (eventually) call either the *resolve* or *reject* functions.
 
 When calling the above function we could do something like this:
 
-`const promise = myFunction();
+`
+const promise = myFunction();
 
 promise.then(result => {
     // Handle successful completion
@@ -97,7 +102,8 @@ promise.then(result => {
     // Handle failure
 }).finally(() => {
     // The finally block is always executed after the promise is satisfied
-});`
+});
+`
 
 Here we are calling our function, and appending functions to the *.then*, *.catch*, and *.finally* 'events' of the Promise.  The Promise prototype appends the handlers to the resolve (*then*) and reject (*catch*) function calls within our function.  The *.finally* event is a special callback that is triggered after the Promise is *either* resolved or rejected - useful for cleaning up the state of the UI after the call is completed (e.g., hiding a spinner).
 
