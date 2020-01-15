@@ -98,3 +98,16 @@ promise.then(result => {
 }).finally(() => {
     // The finally block is always executed after the promise is satisfied
 });`
+
+Here we are calling our function, and appending functions to the *.then*, *.catch*, and *.finally* 'events' of the Promise.  The Promise prototype appends the handlers to the resolve (*then*) and reject (*catch*) function calls within our function.  The *.finally* event is a special callback that is triggered after the Promise is *either* resolved or rejected - useful for cleaning up the state of the UI after the call is completed (e.g., hiding a spinner).
+
+## Pour Some Sugar on me
+
+You may have heard the term 'Syntactic Sugar' thrown around in conversations about JavaScript.  It refers to the fact that a *lot* of the 'new' features of ES6/7/8 are simply re-wrapping existing features, or practices; in a simpler standardized format.  Promises standardized the Deffered objects in jQuery, the 'new' import statement replaces calls to the *require* function.  The 'new' async/await keywords are no exception to this practice:
+
+> "async" functions are just functions that wrap their return value in a Promise.
+> "await" just 'un-wraps' a Promise and gets the return value.
+
+That is either a major revalation, or a major let-down - I'll let you decide which.
+
+The huge positive to this is that with your understanding of Promises gives you a *lot* of power, and introducing async/await can bring a *lot* of simplicity.
