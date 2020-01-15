@@ -120,3 +120,56 @@ You may have heard the term 'Syntactic Sugar' thrown around in conversations abo
 That is either a major revalation, or a major let-down - I'll let you decide which.
 
 The huge positive to this is that with your understanding of Promises gives you a *lot* of power, and introducing async/await can bring a *lot* of simplicity.
+
+Let's imagine we have two API calls: *getRandomNumber* and *getAPlusB*.
+
+I won't go into 'what this looks like without Promises'.  I started to, immediately shuddered in revulsion and deleted it...
+
+So with promises:
+
+```
+const getRandomNumber() {
+	return new Promise((resolve, reject) => {
+		try {
+			// Make our API call
+			resolve([some value we get from the API]);
+		} catch (err) {
+			reject(err);
+		}
+	});
+}
+
+const getAPlusB(a, b) {
+	return new Promise((resolve, reject) => {
+		try {
+			// Make our API call using *a* and *b*
+			resolve([the sum we get from the API]);
+		} catch (err) {
+			reject(err);
+		}
+	});
+}
+
+
+
+someFunction() {
+	let someValue; // We instantiate the variable here
+	getRandomNumber().then(a => {
+		getRandomNumber().then(b => {
+			getAPlusB(a, b).then(c => someValue = c) // and set that value here...
+		})
+	});
+	
+	console.log(someValue);
+}
+```
+
+Here we have three API calls being made, assuming their named correctly: we're getting two random numbers from the server, then asking the server to add them together for us.  Seems like a bit of a waste of server power, but hey... it's in the cloud...
+
+The big question is "What is logged to the console at the end of *someFunction()*?"
+
+...
+
+undefined.
+
+The problem we have here is that while we're not blocking the thread with our API calls, the values are set *inside* the callback functions.
