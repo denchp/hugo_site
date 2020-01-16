@@ -13,7 +13,6 @@ permalinks:
   posts: /:year/:month/:filename/
 
 taxonomies:
-    category : categories
     tag : tags
     series : series
 outputFormats:          
@@ -90,6 +89,7 @@ params:
 
   # profile
   profile:
+    footerEnabled: false
     enabled: true # Whether to show profile bar
     avatar: puckLogo.png
     author: Coach Dench

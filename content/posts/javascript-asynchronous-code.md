@@ -8,7 +8,7 @@ tags: [ 'javascript', 'async', 'promise', '100 level' ]
 
 ## What Is Asynchronous Code and When To Use It?
 
-For many developers the thought of "Asynchronous Code" conjours one of two spectres.  One spirit capable of mysteriously unlocking untold amounts of performance by shipping tasks off to some fabled 'background thread'; and the other a ghoul of odd behaviours and synchronization problems.  By the end of this article I hope to banish both of these ghosts, and replace them with a solid understanding of 'async' code, and just how it works in JavaScript.
+For many developers the thought of "Asynchronous Code" conjures one of two spectres.  One spirit capable of mysteriously unlocking untold amounts of performance by shipping tasks off to some fabled 'background thread'; and the other a ghoul of odd behaviors and impossible-to-test synchronization problems.  By the end of this article I hope to banish both of these ghosts, and replace them with a solid understanding of 'async' code, and how to use it in JavaScript.
 
 > We're *not* going to be diving deep under the hood here.  This is about practical understanding and examples that can help you get over async superstitions.
 
@@ -22,13 +22,13 @@ That's right: JavaScript only has *one thread*.
 
 Yes, and no.  
 
-*Under most simple implementations async code is only beneficical for un-blocking the JS thread when making calls to a server*.  That is to say, async code is only useful when we're making API calls, retrieving static files such as images or scripts, or even connecting or communicating through web sockets.
+*Under most simple implementations async code is only beneficial for un-blocking the JS thread when making calls to a server*.  That is to say, async code is only useful when we're making API calls, retrieving static files such as images or scripts, or even connecting or communicating through web sockets.
 
 ## The Brief History of Async Code in JavaScript
 
-Asynchronous code isn't new to JavaScript, and while *Promises* and *async/await* are relative new comers (2012 and 2017 respectively), the basis of these features can be found in jQuery's deffered objects, and even the concept of 'Promises' was [https://en.wikipedia.org/wiki/Futures_and_promises] (first introduced in 1976).  Prior to the 're-discovery' of promises, events and callback functions were the most common ways of handling 'asynchronous' code in JavaScript. Starting around 2011, deffered objects and the idea of Promises started to take hold, with their eventual wide-spread adoption by browsers in 2014-2015.
+Asynchronous code isn't new to JavaScript, and while *Promises* and *async/await* are relative new comers (2012 and 2017 respectively), the foundation of these language features can be found in jQuery's deferred objects, and even the concept of 'Promises' was [first introduced in 1976](https://en.wikipedia.org/wiki/Futures_and_promises).  Prior to the 're-invention' of promises: events and callback functions were the most common ways of handling 'asynchronous' code in JavaScript. Starting around 2011, jQuery's deferred objects and the idea of Promises started to take hold, with their eventual wide-spread adoption by browsers in 2014-2015 with ES6*.
 
-Promises formalized many of the practices being used in the wild, and were a very good solution to a common problem.  However they weren't without problems.  Most often extensive use of promises devolved into a grotesque chain and nesting of '.then' calls:
+Promises formalized many of the practices being used in the wild, and were a good solution to a common problem.  However they weren't without problems themselves.  Most often: the extensive use of Promises devolved into a grotesque chain and nesting of '.then' calls:
 
 ```
 const promise1 = someAsyncCall().then(res => {
@@ -42,9 +42,11 @@ const promise1 = someAsyncCall().then(res => {
 });
 ```
 
-That's two async calls, one dependent on the result of the other, and handling the failure (a.k.a. rejection) of either Promise.
+That's two async calls, one dependent on the result of the other, and handling the failure (a.k.a. rejection) of each Promise.
 
-In 2017 ES8* introduced async/await as a standard language feature, however - support started appearing in browsers in 2016.  The async/await keywords address some of the shortcomings of Promises.  Mostly the ugly world of nested promises and error handling.  Using async/await the code above can be refactored to this:
+If you can imagine a site that requires multiple inter-related API calls, the code quickly looks like crusty three day old spaghetti.  It becomes unreadable, with error handling (*catch* handlers) nested inside the different *result* (*then*) handlers.  It's a mess, it's difficult to read, and nearly impossible to maintain.
+
+In 2017 ES8 introduced async/await as a standard language feature, however - support started appearing in browsers in 2016.  The async/await keywords address some of the shortcomings of Promises.  Mostly the ugly world of nested promises and error handling.  Using async/await the code above can be refactored to this:
 
 ```
 try {
@@ -70,7 +72,7 @@ Before we get any further, let's take a look at the Promise constructor:
 
 ``` new Promise( function(resolve, reject) {} ); ```
 
-The Promise contstructor takes in a function that takes two parameters *resolve* and *reject*.  The function itself is the action that the Promise will take during it's execution.  This could be anything from making an API call, to doing some advanced math (though we've covered why there's no immediate benefit to running so-called *long running functions* using JS's async features).
+The Promise constructor takes in a function that takes two parameters *resolve* and *reject*.  The function itself is the action that the Promise will take during it's execution.  This could be anything from making an API call, to doing some advanced math (though we've covered why there's no immediate benefit to running so-called *long running functions* using JavaScript's async features).
 
 The *resolve* and *reject* parameters provide callback functions that the Promise can execute after it either succeeds (resolved) or fails (rejected).
 
@@ -117,7 +119,7 @@ You may have heard the term 'Syntactic Sugar' thrown around in conversations abo
 > "async" functions are just functions that wrap their return value in a Promise.
 > "await" just 'un-wraps' a Promise and gets the return value.
 
-That is either a major revalation, or a major let-down - I'll let you decide which.
+That is either a major revelation, or a major let-down - I'll let you decide which.
 
 The huge positive to this is that with your understanding of Promises gives you a *lot* of power, and introducing async/await can bring a *lot* of simplicity.
 
@@ -150,8 +152,6 @@ const getAPlusB(a, b) {
 	});
 }
 
-
-
 someFunction() {
 	let someValue; // We instantiate the variable here
 	getRandomNumber().then(a => {
@@ -162,6 +162,7 @@ someFunction() {
 	
 	console.log(someValue);
 }
+
 ```
 
 Here we have three API calls being made, assuming their named correctly: we're getting two random numbers from the server, then asking the server to add them together for us.  Seems like a bit of a waste of server power, but hey... it's in the cloud...
@@ -173,3 +174,5 @@ The big question is "What is logged to the console at the end of *someFunction()
 undefined.
 
 The problem we have here is that while we're not blocking the thread with our API calls, the values are set *inside* the callback functions.
+
+* ES6 or ES8 refers to the "ECMAScript" version.  ECMAScript is the industry standard on which JavaScript is based.
