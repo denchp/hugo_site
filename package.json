@@ -1,0 +1,14 @@
+{
+  "name": "coachdench-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/denchp/hugo_site.git",
+  "author": "Patrick Dench <denchp@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "deploy-prod": "hugo && firebase deploy --project prod",
+    "deploy-beta": "hugo -D && firebase deploy --project dev",
+    "start": "hugo server -D"
+  }
+}

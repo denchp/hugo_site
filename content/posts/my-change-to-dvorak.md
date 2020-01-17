@@ -1,7 +1,7 @@
 ---
 title: "My Change to Dvorak"
-date: 2020-01-08T14:03:24-06:00
-draft: true
+date: 2020-01-17T14:03:24-06:00
+draft: false
 tags: [ 'dvorak', 'personal development' ]
 ---
 
@@ -23,7 +23,7 @@ But something changed late in 2019...
 
 I watched a few developers streaming their development on twitch.tv, and a few were simply *amazing* typists.  My poor self-image of my typing habits rocketed forward in my mind. A few of the streamers gave recommendations on how to improve your typing on their personal pages.  After some review I found that one common theme from their recommendations was to **focus on using the right fingers to strike the right keys every time, all the time**.  I resolved to try and improve my habits (again).
 
-*I quickly discovered that I couldn't possibly spend enough time trying to correct my bad habits when I spent 8 hour work days - and 10 hours a week on my own stream - reinforcing my said bad habits.*
+*I quickly discovered that I couldn't possibly spend enough time trying to correct my bad habits when I spent 8 hour work days - and 10 hours a week on my own stream - reinforcing my33333333333333333333333333333333333333333333333333333 bad habits.*
 
 Then I saw a developer streaming his Dvorak set-up.
 
@@ -49,21 +49,23 @@ After about a month I finally removed the QWERTY layout from my home **and** wor
 
 It was a painful time.
 
-I quickly found that messaging people through any means (discord, slack, teams) was *extremely* slow. Which had the odd effect of making me actually think about how to say what I needed to - in the fewest possible words; just to avoid typing.
+I quickly found that messaging people through any means (discord, slack, teams) was *extremely* slow. Which had the odd effect of making me actually think about how to say what I needed to;3 in the fewest possible words; just to avoid typing.
 
-Coding was a little better since there isn't a lot of 'free-form' typing.  Re-learning where things like the braces '{}' and the hyphen '-' were took some time.  
+Coding was a little better since there isn't a lot of 'free-form' typing.  Re-learning where things like the braces '{}' and the hyphen '-' were did take some time.  
 
 The most frustrating thing for me was that I had to expend significantly more effort thinking about my typing - which took away from my ability to think about how I wanted my code to work.  This was a **major** frustration, especially as I was streaming my personal development project.  Instead of being able to fluidly talk about the code as I typed, *and* thinking about what I had to do next; I found I had to explain what I was about to code, type some code, then think about the impact of that code and what had to be done next.  *Switching to Dvorak made me go from executing three tasks in parallel, to just one*.
 
 ## Ramping Up the Training
 
-Shortly after making my switch to Dvorak 100% I found keybr.com.  It supports Dvorak, and (in my opinion) was much more rigorous than the learn.dvorak.nl site.  The additional feedback, profile reports, and even the fact that it gave me my performance in WPM* helped me focus in on my weaknesses, and quantify my improvements.
+Shortly after making my switch to Dvorak 100% I found keybr.com.  It supports Dvorak, and (in my opinion) was much more rigorous than the learn.dvorak.nl site.  The additional feedback, profile reports, and even the fact that it gave me my performance in WPM helped me focus in on my weaknesses, and quantify my improvements.
+
+
+>learn.dvorak.nl lets you type 100 words and tells you how fast you typed them, so figuring out my WPM required some math
 
 As I realized I needed to significantly improve my speed I started using the new tools *as much as possible*.  Any time I found myself with idle hands on my computer I'd pull up keybr.com and start practicing.
 
 Over and over I practiced, and I steadily got faster and faster.  Within a month I was at a respectable, if not blazing fast 25 WPM, after two I was pushing 45 WPM and now (another month in) I'm working to get to 60 WPM.
 
-(* learn.dvorak.nl lets you type 100 words and tells you how fast you typed them, so figuring out my WPM required some math) 
 
 ## Results and Lessons Learned
 
@@ -73,15 +75,22 @@ I've also had other developers who have claimed to type 65-75 WPM (QWERTY) fail 
 
 I'll continue to work on my speed because it's become habit at this point.  I spend 15-45 minutes a day on keybr's practice drills, whether I'm watching Netflix at home, waiting for code to compile, or a query to run, I keep the window open so I can jump in and get a little more practice.
 
+--- 
+
 Is Dvorak Better?
 : No.
 : Dvorak is definitely a different experience than QWERTY, but that's also probably because I'm learning differently.  It is ostensibly 'more efficient', but most of the stories about the origins of QWERTY (e.g., it was designed to slow typists down) are complete fabrications.  The origins of the layout are far more nuanced.  And while Dvorak was designed with efficiency in mind, the benefits are (in my opinion) immeasurably small.
+
+--- 
 
 What about switching back and forth between Dvorak and QWERTY?
 : As far as the learning process has gone, I'm glad I took the plunge on the computers I use everyday.  I think if I had kept switching back and forth my learning would have been extremely stunted.
 : I do find it difficult to go to someone elses' computer to help them.  It's a very jarring experience.  It does feel a bit like the 'vegan trope' where any vegan will explain their veganism with barely any prompting.  But, I do find I have to explain why I'm suddenly mystified by their unfamiliar keyboard layout.
 
+---
+
 Should I Switch?
+
 : Sure!  Why not?
 : But, if it's just because you're expecting huge gains in typing speeds - don't.  As I said, I'm about 3-4 months into this change and am starting to push towards 60 WPM - which is about what I typed before the change.
 : If you want to re-invent your typing habits - definitely.

@@ -1,4 +1,4 @@
-baseURL: https://example.com/
+baseURL: https://blog.coachdench.com/
 theme: pure
 title: Coach Dench
 copyright: Patrick Dench
@@ -108,7 +108,6 @@ params:
       url: favicon.ico
     title: Hugo # 页面title
     favicon: favicon.ico
-    board: <p>enjoy~</p> # 公告牌
 
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
@@ -148,7 +147,6 @@ params:
 
   # Sidebar only the following widgets. you can remove any you don't like it.
   widgets:
-    - board
     - category
     - tag
     - recent_posts

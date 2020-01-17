@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "dev": "coachdench-dev",
+    "prod": "coachdench-prod",
+    "default": "coachdench-dev"
+  }
+}
