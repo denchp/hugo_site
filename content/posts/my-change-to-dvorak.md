@@ -1,7 +1,6 @@
 ---
 title: "My Change to Dvorak"
 date: 2020-01-17T14:03:24-06:00
-draft: false
 tags: [ 'dvorak', 'personal development' ]
 ---
 
@@ -23,7 +22,7 @@ But something changed late in 2019...
 
 I watched a few developers streaming their development on twitch.tv, and a few were simply *amazing* typists.  My poor self-image of my typing habits rocketed forward in my mind. A few of the streamers gave recommendations on how to improve your typing on their personal pages.  After some review I found that one common theme from their recommendations was to **focus on using the right fingers to strike the right keys every time, all the time**.  I resolved to try and improve my habits (again).
 
-*I quickly discovered that I couldn't possibly spend enough time trying to correct my bad habits when I spent 8 hour work days - and 10 hours a week on my own stream - reinforcing my33333333333333333333333333333333333333333333333333333 bad habits.*
+*I quickly discovered that I couldn't possibly spend enough time trying to correct my bad habits when I spent 8 hour work days - and 10 hours a week on my own stream - reinforcing my bad habits.*
 
 Then I saw a developer streaming his Dvorak set-up.
 

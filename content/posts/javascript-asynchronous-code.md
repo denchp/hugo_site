@@ -1,22 +1,21 @@
 ---
 title: "Asynchronous Code In JavaScript"
 date: 2020-01-15T14:03:24-06:00
-draft: true
 tags: [ 'javascript', 'async', 'promise', '100 level' ]
 ---
 
 
 ## What Is Asynchronous Code and When To Use It?
 
-For many developers the thought of "Asynchronous Code" conjures one of two spectres.  One spirit capable of mysteriously unlocking untold amounts of performance by shipping tasks off to some fabled 'background thread'; and the other a ghoul of odd behaviors and impossible-to-test synchronization problems.  By the end of this article I hope to banish both of these ghosts, and replace them with a solid understanding of 'async' code, and how to use it in JavaScript.
+For many developers the thought of "Asynchronous Code" conjures one of two equally haunting ghosts.  One spirit capable of mysteriously unlocking untold amounts of performance by shipping tasks off to some fabled 'background thread'.  The other: a ghoul of odd behaviors and impossible-to-test synchronization problems.  By the end of this article I hope to banish both of these ghosts, and replace them with a solid understanding of 'async' code, and how to use it in JavaScript.
 
 > We're *not* going to be diving deep under the hood here.  This is about practical understanding and examples that can help you get over async superstitions.
 
 > We're also not going to go into *Web Workers* as they're more of a '200 level' article.
 
-First of all, if you're coming from desktop development: simple async code in JavaScript is much simpler than it is on a desktop.  That simplicity stems from the fact that JavaScript's async code isn't about starting up multiple threads to improve performance.  Instead, it's about un-blocking the *single thread* that JavaScript has to use.
+First of all, if you're coming from desktop development: simple async code in JavaScript is actually much simpler than it is on a desktop.  That simplicity stems from the fact that JavaScript's async code isn't about starting up multiple threads to improve performance.  Instead, it's about un-blocking the *single thread* that JavaScript has to use.
 
-That's right: JavaScript only has *one thread*.  
+That's right: JavaScript only has *one thread*.
 
 **So what's the point in writing asynchronous code if we aren't farming it off to some background thread?  Aren't we just going to have to wait for that code anyway?**
 
