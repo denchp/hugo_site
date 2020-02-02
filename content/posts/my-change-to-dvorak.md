@@ -95,3 +95,10 @@ Should I Switch?
 : If you want to re-invent your typing habits - definitely.
 
 You can find my key.br profile [here](https://www.keybr.com/profile/l3gx1xr) (make sure to look at the Dvorak stats, not the QWERTY)
+
+--- 
+## Update 1/27/2020
+
+I find it hard to believe that I'm already writing an update to this blog post, but here I am.  No, I'm not quitting Dvorak, I'm upping my goal.  10 days ago when I posted this I was stretching to get to 60.  I would guess I was averaging around 55WPM.  That average is now over 60, and I've managed to hit 80+ wpm on keybr.com.  While it's not 'real' typing, it's the most standard measurement I have.  I'm still a bit slower when typing blog posts, or even 'real' typing tests that have excerpts from text.  But the reality is, I *still* can't look at my keyboard, and I'm *still* getting faster.
+
+As I said before, Dvorak isn't inherently better than QWERTY, but the learning process I'm using has significantly changed my habits.  Whether you black-out your keyboard, get a Das Keyboard, or adopt a new layout: if you want to fix your bad habits, the best option is to *start over from scratch*.

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Coach Dench</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Patrick Dench</copyright>
-    <lastBuildDate>Wed, 15 Jan 2020 14:03:24 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 14:03:24 -0600</lastBuildDate>
     
         <atom:link href="https://blog.coachdench.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Change to Dvorak</title>
+      <link>https://blog.coachdench.com/2020/01/my-change-to-dvorak/</link>
+      <pubDate>Fri, 17 Jan 2020 14:03:24 -0600</pubDate>
+      
+      <guid>https://blog.coachdench.com/2020/01/my-change-to-dvorak/</guid>
+      <description>Practice Makes Permanent Like most people who started their education after 1982 - I started learning to type in elementary school, which was admittedly a long time ago. We learned with an early &amp;lsquo;edu-tainment game&amp;rsquo; called PAWS on the school&#39;s Commodore 64s. For me, the most frustrating part came when we were done with a lesson. We were allowed to play games; but the teacher had to &amp;lsquo;review&amp;rsquo; the lesson with you.</description>
+    </item>
     
     <item>
       <title>Asynchronous Code In JavaScript</title>
@@ -17,16 +26,7 @@
       <pubDate>Wed, 15 Jan 2020 14:03:24 -0600</pubDate>
       
       <guid>https://blog.coachdench.com/2020/01/javascript-asynchronous-code/</guid>
-      <description>What Is Asynchronous Code and When To Use It? For many developers the thought of &amp;ldquo;Asynchronous Code&amp;rdquo; conjures one of two spectres. One spirit capable of mysteriously unlocking untold amounts of performance by shipping tasks off to some fabled &amp;lsquo;background thread&amp;rsquo;; and the other a ghoul of odd behaviors and impossible-to-test synchronization problems. By the end of this article I hope to banish both of these ghosts, and replace them with a solid understanding of &amp;lsquo;async&amp;rsquo; code, and how to use it in JavaScript.</description>
-    </item>
-    
-    <item>
-      <title>My Change to Dvorak</title>
-      <link>https://blog.coachdench.com/2020/01/my-change-to-dvorak/</link>
-      <pubDate>Wed, 08 Jan 2020 14:03:24 -0600</pubDate>
-      
-      <guid>https://blog.coachdench.com/2020/01/my-change-to-dvorak/</guid>
-      <description>Practice Makes Permanent Like most people who started their education after 1982 - I started learning to type in elementary school, which was admittedly a long time ago. We learned with an early &amp;lsquo;edu-tainment game&amp;rsquo; called PAWS on the school&#39;s Commodore 64s. For me, the most frustrating part came when we were done with a lesson. We were allowed to play games; but the teacher had to &amp;lsquo;review&amp;rsquo; the lesson with you.</description>
+      <description>What Is Asynchronous Code and When To Use It? For many developers the thought of &amp;ldquo;Asynchronous Code&amp;rdquo; conjures one of two equally haunting ghosts. One spirit capable of mysteriously unlocking untold amounts of performance by shipping tasks off to some fabled &amp;lsquo;background thread&amp;rsquo;. The other: a ghoul of odd behaviors and impossible-to-test synchronization problems. By the end of this article I hope to banish both of these ghosts, and replace them with a solid understanding of &amp;lsquo;async&amp;rsquo; code, and how to use it in JavaScript.</description>
     </item>
     
   </channel>

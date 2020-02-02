@@ -4,18 +4,83 @@
   
   <url>
     <loc>https://blog.coachdench.com/</loc>
+    <lastmod>2020-01-17T14:03:24-06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.coachdench.com/series/</loc>
+    <loc>https://blog.coachdench.com/tags/dvorak/</loc>
+    <lastmod>2020-01-17T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/2020/01/my-change-to-dvorak/</loc>
+    <lastmod>2020-01-17T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/tags/personal-development/</loc>
+    <lastmod>2020-01-17T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/posts/</loc>
+    <lastmod>2020-01-17T14:03:24-06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.coachdench.com/tags/</loc>
+    <lastmod>2020-01-17T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/tags/100-level/</loc>
+    <lastmod>2020-01-15T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/tags/async/</loc>
+    <lastmod>2020-01-15T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/2020/01/javascript-asynchronous-code/</loc>
+    <lastmod>2020-01-15T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/tags/javascript/</loc>
+    <lastmod>2020-01-15T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/tags/promise/</loc>
+    <lastmod>2020-01-15T14:03:24-06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.coachdench.com/series/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
