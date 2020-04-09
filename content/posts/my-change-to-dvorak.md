@@ -102,3 +102,10 @@ You can find my key.br profile [here](https://www.keybr.com/profile/l3gx1xr) (ma
 I find it hard to believe that I'm already writing an update to this blog post, but here I am.  No, I'm not quitting Dvorak, I'm upping my goal.  10 days ago when I posted this I was stretching to get to 60.  I would guess I was averaging around 55WPM.  That average is now over 60, and I've managed to hit 80+ wpm on keybr.com.  While it's not 'real' typing, it's the most standard measurement I have.  I'm still a bit slower when typing blog posts, or even 'real' typing tests that have excerpts from text.  But the reality is, I *still* can't look at my keyboard, and I'm *still* getting faster.
 
 As I said before, Dvorak isn't inherently better than QWERTY, but the learning process I'm using has significantly changed my habits.  Whether you black-out your keyboard, get a Das Keyboard, or adopt a new layout: if you want to fix your bad habits, the best option is to *start over from scratch*.
+
+---
+## Update 4/8/2020
+
+I'm still using Dvorak, and still seeing improvements in my typing.  At this point I don't feel any significant difference with my days of QWERTY typing, aside from the fact that I don't look at the keyboard *at all*.  There are a few keys that still give me trouble (such as -, =, and sometimes /).  But those will come too I imagine.  I mostly run into them when programming - but I do enough of that that even the odd-ball keys are becoming more natural.
+
+I'm averaging around 70+ WPM on keybr, but I've now peaked at 96.4 WPM.  I'm still pushing to get my average up; I think my next goal is averaging 90+.  The gains don't 'feel' like the big leap from when I first changed to Dvorak full-time, likely because going from 30WPM to 60WPM is doubling my speed - while a change from 60 to 80 is not even a 50% improvement.  It's still significant, but it doesn't *feel* like the leap from 20-40, or 30-60.
